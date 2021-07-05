@@ -71,19 +71,32 @@ body{
       flex-basis: 100%;
     }
 
-@media(max-width:320px){
-  
+@media(max-width:768px){
+  body{
+    font-size: 0.5em;
+    font-weight: lighter;
+
+  }
   .cardGroup {
     display: flex;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
-    max-width:710px
+    max-width:330px;
+    flex-direction: column;
+    max-height: 400px;
   }
   .cardGroup__cardDescription {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0;
-    
 }
+  .card__descriptionText{
+    font-weight: lighter;
+    font-size: medium;
+  }
+  .card__price{
+    font-weight:900;
+    font-size: 2em;
+  }
 }
